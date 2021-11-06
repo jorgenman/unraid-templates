@@ -13,7 +13,7 @@
   <Category>Backup:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/jorgenman/unraid-templates/main/jorgenman/images/restic-rest-server-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
