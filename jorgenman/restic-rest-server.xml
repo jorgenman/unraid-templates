@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>restic-rest-server</Name>
+  <Repository>restic/rest-server</Repository>
+  <Registry>https://hub.docker.com/r/restic/rest-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/restic/rest-server</Project>
+  <Overview>Rest Server is a high performance HTTP server that implements restic's REST backend API. It provides secure and efficient way to backup data remotely, using restic backup client via the rest: URL.</Overview>
+  <Category>Backup:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1636220015</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Rest Server is a high performance HTTP server that implements restic's REST backend API. It provides secure and efficient way to backup data remotely, using restic backup client via the rest: URL.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>OPTIONS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Data directory" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Rest-server listen port" Target="8000" Default="8000" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Additional rest-server options" Target="OPTIONS" Default="" Mode="" Description="Container Variable: OPTIONS" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
