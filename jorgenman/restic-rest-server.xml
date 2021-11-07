@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/115646-support-restic-rest-server</Support>
   <Project>https://github.com/restic/rest-server</Project>
   <Overview>Rest Server is a high performance HTTP server that implements restic's REST backend API. It provides secure and efficient way to backup data remotely, using restic backup client via the rest: URL.</Overview>
   <Category>Backup:</Category>
